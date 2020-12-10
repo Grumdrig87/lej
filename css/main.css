@@ -194,4 +194,84 @@ input {
 }
 
 /* -----------------------------Header---------------------------- */
+.header {
+    padding: 57px 0 0;
+}
+.header__wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.header__nav > ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
 
+.sub-menu {
+    display: none;
+    background: #080808;
+    -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+       -moz-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    min-width: 234px;
+    padding: 24px 32px;
+}
+.sub-menu li a {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 160%;
+    color: #FFFFFF;
+}
+.sub-menu li:not(:last-child) {
+    margin-bottom: 12px;
+}
+.header__nav ul > .menu-item:not(:last-child) {
+    margin-right: 40px;
+}
+.header__nav ul > .menu-item {
+   padding-bottom: 16px;
+}
+.header__nav ul > .menu-item-has-children:hover > .sub-menu {
+    display: block;
+}
+.header__nav ul > .menu-item-has-children {
+    position: relative;    
+ }
+ .header__nav ul > .menu-item > a {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: #080808;
+ } 
+ .header__nav ul > .menu-item > a:hover {
+     text-decoration: none;
+ }
+ .header__nav ul > .menu-item.transp a {
+    opacity: .3;
+ }
