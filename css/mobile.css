@@ -8,9 +8,6 @@
 
 /* 993-1200px */
 @media screen and (max-width: 1200px) {
-  .container{
-    width: 960px;
-  }
 
 }
  
@@ -198,16 +195,202 @@
     transition: top 0.3s ease 0.1s, transform 0.3s ease-out 0.5s, -webkit-transform 0.3s ease-out 0.5s, -moz-transform 0.3s ease-out 0.5s, -o-transform 0.3s ease-out 0.5s;
     transition: top 0.3s ease 0.1s, transform 0.3s ease-out 0.5s, -webkit-transform 0.3s ease-out 0.5s;
   }
-  
+  .footer__cont {
+    width: 100%;
+  }
+  .header__nav ul > .menu-item {
+    margin-right:  0 !important;
+}
 }
 
 /* 577-768px */
 @media screen and (max-width: 768px) {
-  
+  .main,
+  .how,
+  .develop,
+  .proud,
+  .rev,
+  .facts,
+  .hiring,
+  .method,
+  .faq,
+  .start {
+    padding: 50px 0;
+  }
+  .develop__card {
+    text-align: center;
+    width: 50%;
+    margin-bottom: 20px;
+}
+.proud p {
+  margin-bottom: 40px;
+}
+.title-l {
+  font-size: 26px;
+}
+p {
+  font-size: 16px;
+}
+.title {
+  font-size: 30px;
+}
+.btn {
+    padding: 12px 26px;
+    font-size: 14px;
+}
+.proud__wrap .btn__sec {
+  margin-top: 50px;
+}
+.btn__sec {
+  padding: 17px 42px;
+}
+.rev__card p {
+  font-size: 16px;
+}
+.rev__wrap {
+  margin-bottom: 40px;
+}
+.facts__item {
+  width: 50%;
+  margin-bottom: 10px;
+}
+.hiring .title-l {
+  margin-bottom: 10px;
+}
+.method .title-l {
+  margin-bottom: 32px;
+}
+.method__item strong {
+  font-size: 20px;
+}
+.method__wrap {
+  margin-bottom: 50px;
+}
+.method__auth {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.method__left {
+  width: 70%;
+  margin: 0 auto;
+}
+.method__auth-wrap {
+  border-right: none;
+  padding: 32px 0 50px;
+}
+.method__right {
+  width: 100%;
+  margin-top: 50px;
+}
+.faq__title {
+  font-size: 18px;
+}
+.method__who {
+  margin-bottom: 30px;
+}
 }
 
 
 /* 320-576px */
 @media screen and (max-width: 576px) {
-  
+  .header__nav {
+    width: 90%;
+  }
+  .how__card {
+    border-right: none !important;
+    width: 100%;
+  }
+  .proud__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+       -moz-box-orient: vertical;
+       -moz-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-top: 20px;
+}
+.proud__item-right {
+  width: 100%;
+  background: none;
+  min-height: 64px;
+}
+.proud__item-left {
+  padding: 35px 0px;
+  width: 100%;
+}
+.title-m {
+  font-size: 20px;
+}
+.main,
+.how,
+.develop,
+.proud,
+.rev,
+.facts,
+.hiring,
+.method,
+.faq,
+.start {
+  padding: 30px 0;
+}
+.proud__wrap .btn__sec {
+  margin-top: 30px;
+}
+.method__left {
+  width: 100%;
+}
+.method .title-l,
+.faq .title-l,
+.rev .title-l {
+  margin-bottom: 24px;
+}
+.faq__title {
+  padding-right: 50px;
+}
+.start__form-wrap {
+  width: 100%;
+  padding: 10px 20px;
+}
+.start__form-tawrap {
+  padding-top: 10px;
+}
+.footer {
+  padding: 60px 0 40px;
+}
+.footer .title-l {
+  margin-bottom: 40px;
+}
+.footer__item {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+.footer__cont {
+  margin-bottom: 36px;
+}
+.footer__wrap {
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+}
+.footer__bottom ul li:not(:last-child) {
+  margin-right: 15px;
+}
+.footer__bottom {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer__item a {
+  font-size: 20px;
+}
 }
