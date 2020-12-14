@@ -14,7 +14,7 @@ jQuery(document).ready(function($){
       });
     }
 
-    //slider
+
     
     $('.rev__upr-arr').hover( function(){
         $(this).each(function() {
@@ -25,7 +25,7 @@ jQuery(document).ready(function($){
 
 
 
-    // 
+    //slider
 
     var helpers = {
         addZeros: function (n) {
@@ -87,4 +87,23 @@ jQuery(document).ready(function($){
       $('[data-nav]').toggleClass("open");
       $('body').toggleClass('open');
     });
+
+    //upload
+    if ($('[data-att]').length > 0) {
+      $('[data-att]').on('change', function() {
+        var size = this.files[0].size / 1048576;
+        $('[data-size]').text(size.toFixed(1) + " mb");
+        $('[data-fname]').text(this.files[0].name);
+        $('[data-fwrap]').addClass('check');
+        $('[data-clear]').addClass('show');
+      });
+      $('[data-clear]').on('click', function() { 
+        $('[data-att]').val(''); 
+        $('[data-size]').text('pdf, doc, docx');
+        $('[data-fname]').text('Attach CV');
+        $('[data-clear]').removeClass('show');
+        $('[data-fwrap]').removeClass('check');
+      });
+    }
+
 })
