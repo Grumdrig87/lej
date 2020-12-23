@@ -1349,3 +1349,250 @@ p {
     background: #0E0E0E;
     color: #fff;
 }
+
+/* ---blog--- */
+
+.page-bl {
+    padding-bottom: 140px;
+}
+.page-bl__tabs {
+    background: #F1F1F1;
+    -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+            border-radius: 6px;
+    padding: 4px;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin: 0 auto 56px;
+}
+.page-bl__tab {
+    padding: 4px 24px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #080808;
+    opacity: 0.6;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+}
+.page-bl__tab:not(:last-child) {
+    margin-right: 4px;
+}
+.page-bl__tab.active,
+.page-bl__tab:hover {
+    color: #11AEAE;
+    background: #FFFFFF;
+    opacity: 1;
+    -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+       -moz-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+.page-bl__items {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin: -36px -20px;
+}
+.page-bl__item {
+    padding: 36px 20px;
+    position: relative;
+    width: 50%;
+}
+.page-bl__link {
+    margin-bottom: 100px;
+    display: inline-block;
+}
+.page-bl__link:hover {
+    text-decoration: none;
+}
+.page-bl__foto {
+    display: block;
+    height: 221px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.05), 0px 10px 20px rgba(0, 0, 0, 0.1);
+       -moz-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.05), 0px 10px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.05), 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+.page-bl__foto:hover {
+    -webkit-box-shadow: 0 15px 45px -5px rgba(7, 10, 25, 0.25);
+    -moz-box-shadow: 0 15px 45px -5px rgba(7, 10, 25, 0.25);
+    box-shadow: 0 15px 45px -5px rgba(7, 10, 25, 0.25);
+    -webkit-filter: brightness(1.07);
+    filter: brightness(1.07);
+    -webkit-transform: translate(0, -2px);
+    -moz-transform: translate(0, -2px);
+    -ms-transform: translate(0, -2px);
+    -o-transform: translate(0, -2px);
+    transform: translate(0, -2px);
+}
+.page-bl__foto img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.page-bl__txt {
+    padding: 32px 0 0;
+    display: block
+}
+.page-bl__bott {
+    border-bottom: 1px solid #F4F4F4;
+    border-top: 1px solid #F4F4F4;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 36px;
+    padding: 26px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.page-bl__title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+.page-bl__title:hover {
+    text-shadow: 2px 2px white, 2px -2px white, -2px 2px white, -2px -2px white;
+    -webkit-box-shadow: 0 -1px 0 0 white inset, 0 -2px 0 0 #14C6C6 inset;
+    -moz-box-shadow: 0 -1px 0 0 white inset, 0 -2px 0 0 #14C6C6 inset;
+    box-shadow: 0 -1px 0 0 white inset, 0 -2px 0 0 #14C6C6 inset;
+}
+.page-bl__meta {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 12px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 170%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    opacity: 0.5;
+    margin-bottom: 12px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.page-bl__name span {
+    color: #14C6C6;
+    opacity: 1;
+    margin-left: 4px;
+}
+.page-bl__sep {
+    margin: 0 12px;
+}
+.page-bl__otr {
+    font-size: 16px;
+    line-height: 150%;
+    opacity: 0.5;
+}
+.page-bl__heart {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 12px;
+    line-height: 20px;
+    padding-right: 22px;
+    border-right: 1px solid #F4F4F4;
+    cursor: pointer;
+}
+.page-bl__heart svg {
+    margin-right: 9px;
+}
+.page-bl__heart svg path {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.page-bl__heart:hover {
+    color: #14C6C6;
+}
+.page-bl__heart:hover path {
+    stroke: #14C6C6;
+}
+.page-bl__soc {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left:32px;
+}
+.page-bl__soclink {
+    display: block;
+    font-weight: 900;
+    font-size: 17px;
+    line-height: 100%;
+}
+.page-bl__soclink:hover {
+    color:  #14C6C6;
+}
+.page-bl__soclink:hover path {
+    fill:  #14C6C6;
+}
+.page-bl__soclink path {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.page-bl__soclink:not(:last-child) {
+    margin-right: 24px;
+}
+.page-bl__soclink:hover {
+    text-decoration: none;
+}
