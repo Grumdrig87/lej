@@ -1633,6 +1633,7 @@ p {
 }
 .page-bl__heart:hover path {
     stroke: #14C6C6;
+    fill: #14C6C6;
 }
 .page-bl__soc {
     display: -webkit-box;
