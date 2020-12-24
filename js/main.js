@@ -105,5 +105,38 @@ jQuery(document).ready(function($){
         $('[data-fwrap]').removeClass('check');
       });
     }
+    // sticky sidebar
+
+// sticky sidebar
+if ($("[data-side]").length > 0) {
+  $(function() {
+    var sidebar = $("[data-side]");
+    if (sidebar.length > 0) {
+        var offset = sidebar.offset(),
+            topPadding = 90,
+            sectHeight = $("[data-blwrap]").height(),
+            mainHeight = $("[data-mainh]").outerHeight(true),
+            headerHeight = $('[data-head]').height(),
+            sidebarHeight = sidebar.height();
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > offset.top  && (sectHeight + mainHeight + headerHeight - sidebarHeight) > $(window).scrollTop()) {
+                sidebar.stop().animate({
+                    marginTop: $(window).scrollTop() - offset.top + topPadding
+                });
+            }
+            if ($(window).scrollTop() < offset.top) {
+                sidebar.stop().animate({
+                    marginTop: 0
+                });
+            }
+            if ((headerHeight + mainHeight + sectHeight - sidebarHeight) <= $(window).scrollTop()) {
+                sidebar.stop().animate({
+                    marginTop: sectHeight - sidebarHeight
+                });
+            }
+        });
+    }
+  });
+}
 
 })
