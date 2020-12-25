@@ -1,14 +1,9 @@
 
-
-/* 1200-1460px */
-@media screen and (max-width: 1380px) {
-  
-}
-
-
 /* 993-1200px */
 @media screen and (max-width: 1200px) {
-
+  .art__sidebar {
+    left: -30px;
+}
 }
  
 /* 769-992px */
@@ -216,6 +211,9 @@
 .sub-menu li a {
   color: #080808;
 }
+.art__sidebar {
+  left: -15px;
+}
 }
 
 /* 577-768px */
@@ -331,6 +329,17 @@ p {
 .page-bl__tabs {
   margin-bottom: 35px;
 }
+.nopage {
+  padding: 73px 0 100px;
+}
+.art__sidebar {
+  display: none;
+}
+.art__text,
+.art__bottom {
+  padding: 0;
+}
+
 }
 
 
@@ -467,5 +476,48 @@ p {
      -moz-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.nopage__title {
+  font-size: 35px;
+}
+.art-main {
+  margin-top: 26px;
+  padding: 55px 0;
+}
+.art-main .title-l {
+  font-size: 26px;
+}
+.art-main .page-bl__meta {
+  font-size: 10px;
+}
+.art {
+  padding: 50px 0;
+}
+.art__text p {
+  font-size: 16px;
+  line-height: 27px;
+}
+.art__text h2:not(:first-child) {
+  margin-top: 40px;
+}
+.art__text h2 {
+  margin-bottom: 16px;
+  font-size: 22px;
+  line-height: 31px;
+}
+.art__text .wp-block-image:not(:first-child) {
+  margin-top: 30px;
+}
+.art__text .wp-block-image {
+  margin: 0 0 20px;
+}
+.art__text .wp-block-image img:not(:last-child) {
+  margin-bottom: 12px;
+}
+.related {
+  padding: 50px 0;
+}
+.related .title-l {
+  margin-bottom: 30px;
 }
 }
